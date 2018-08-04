@@ -1,1 +1,2 @@
 # ghl_blog
+test
