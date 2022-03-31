@@ -1,7 +1,8 @@
 @import 'vue/fonts.css';
 
 :root {
-    --side-bar-bg-color: #fff;
+    /* --side-bar-bg-color: #fff; */
+    --side-bar-bg-color: #2e3235;
     --control-text-color: #777;
     --font-sans-serif: 'Ubuntu', 'Source Sans Pro', sans-serif !important;
     --font-monospace: 'Fira Code', 'Roboto Mono', monospace !important;
@@ -114,16 +115,29 @@ h3 a {
     color: #34495e;
 }
 
+#write h1::after, #write h2::after, #write h3::after, #write h4::after, #write h5::after, #write h6::after {
+    position: absolute;
+    right: calc(100% + .75em);
+    top: 0rem;
+    /* color: #517090; */
+    color: var(--primary-color);
+    font-size: 1rem;
+    font-weight: bold;
+    font-variant: 'small-caps';
+}
+
 h1 {
     padding-bottom: .4rem;
     font-size: 2.2rem;
     line-height: 1.3;
+    border-bottom: 1px solid #ddd;
 }
+
 
 h2 {
     font-size: 1.75rem;
     line-height: 1.225;
-    margin: 35px 0 15px;
+    /* margin: 35px 0 15px; */
     padding-bottom: 0.5em;
     border-bottom: 1px solid #ddd;
 }
@@ -146,6 +160,40 @@ h6 {
     font-size: 1rem;
     color: #777;
 }
+#write h1::after {
+    content: 'H1';
+    top: .87rem;
+  }
+  
+  #write h2::after {
+    content: 'H2';
+    top: .43rem;
+  }
+  
+  #write h3::after {
+    content: 'H3';
+    top: .2rem;
+  }
+  
+  #write h4::after {
+    content: 'H4';
+    top: .3rem;
+    font-size: 0.8rem;
+  }
+  
+  #write h5::after {
+    content: 'H5';
+    font-size: 0.8rem;
+    top: .2rem;
+  }
+  
+  #write h6::after {
+    content: 'H6';
+    font-size: 0.8rem;
+    top: .2rem;
+  }
+
+
 
 p,
 blockquote,
@@ -479,3 +527,15 @@ footer {
 .html-for-mac .context-menu {
     --item-hover-bg-color: #E6F0FE;
 }
+#typora-sidebar * {
+    color: #f0f0f0;
+  }
+  
+  #typora-sidebar * .file-tree-rename-input {
+    color: #333;
+  }
+  
+  #typora-sidebar * code {
+    background: #0000001a;
+    border-color: #ffffff26;
+  }

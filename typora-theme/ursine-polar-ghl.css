@@ -109,17 +109,17 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Adelle', 'Times New Roman', serif;
 }
 h1 {
-    border-bottom: 1px solid #f79f2a;
+    border-bottom: 1px solid var(--select-text-bg-color);
     font-size: 3.25em;
     line-height: 1.2;
-    padding-bottom: 0.3em;
+    /* padding-bottom: 0.3em; */
 }
 
 h2 {
-    border-bottom: 1px solid #f79f2a;
+  border-bottom: 1px solid var(--select-text-bg-color);
     font-size: 2.75em;
     line-height: 1.225;
-    padding-bottom: 0.3em;
+    /* padding-bottom: 0.3em; */
 }
 
 h3 {
@@ -246,6 +246,8 @@ td, th {
     margin: 0 auto;
     padding: 30px;
     padding-bottom: 100px;
+    line-height: 1.8;
+    transform: none;
 }
 #write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre {
   width: auto;
@@ -259,7 +261,8 @@ td, th {
   position: absolute;
   right: calc(100% + .75em);
   top: 0;
-  color: #517090;
+  /* color: #517090; */
+  color: var(--primary-color);
   font-size: 1rem;
   font-weight: bold;
   font-variant: 'small-caps';
