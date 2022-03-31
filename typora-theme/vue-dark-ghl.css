@@ -597,8 +597,7 @@ tt {
 
 /* heighlight. */
 #write mark {
-    /* background-color: #EBFFEB; */
-    background-color:#c6ff96;
+    background-color: #EBFFEB;
     border-radius: 2px;
     padding: 2px 4px;
     margin: 0 2px;
